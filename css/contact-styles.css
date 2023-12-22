@@ -1,0 +1,181 @@
+body {
+    margin: 0;
+    padding: 10px;
+    background-image: url('https://www.nasa.gov/wp-content/uploads/2023/03/personal-training.png');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header-contact {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+
+}
+
+.Navigation a {
+    position: relative;
+    font-size: x-large ;
+    color: white;
+    font-family: cambria;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 50px;
+}
+
+
+.Navigation a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background:gray ;
+    border-radius: 5px;
+    left: 0;
+    bottom: -6px;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.Navigation a:hover::after {
+    transform: scaleX(1);
+}
+
+.Navigation a:hover {
+    color: gold;
+    outline: none;
+    
+    
+}
+
+.container {
+    align-items: center;
+    display: flex;
+}
+
+#form {
+    width: 400px;
+    margin: 0 auto; /* Centers the element horizontally */
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px; /* Adjusted padding for better spacing */
+    font-weight: 500;
+    display: flex;
+    flex-direction: column  ;
+    align-items: center;
+}
+
+
+h1 {
+    text-align: center;
+    color: black;
+    font-size: 40px;
+}
+.username {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: px;
+    padding: 10px;
+
+}
+
+.username input {
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top: 5px;
+    padding: 5px;
+    border: 1px solid rgb(127, 233, 40);
+    width: 360px;
+    height: 30px;
+}
+
+.username input:focus {
+    outline: 0;
+}
+
+.username .error {
+    color: red;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: px;
+    padding: 10px;
+
+}
+
+.email input {
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top: 5px;
+    padding: 5px;
+    border: 1px solid rgb(127, 233, 40);
+    width: 360px;
+    height: 30px;
+}
+
+.email input:focus {
+    outline: 0;
+}
+
+.email .error {
+    color: red;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.query {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: px;
+    padding: 10px;
+
+}
+
+.query input {
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid rgb(127, 233, 40);
+    width: 350px;
+    height: 80px;
+}
+
+.query input:focus {
+    outline: 0;
+}
+
+.query  .error {
+    color: red;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+
+.submit-button {
+    text-align: center; /* Center the button */
+    margin-top: 20px; /* Add some top margin */
+}
+
+.submit-button button {
+    width: 200px; 
+    padding: 10px 20px; 
+    background-color: black;
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 1em; 
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.submit-button button:hover {
+    background-color: rgba(0, 0, 128, 0.796); /* Darker color on hover */
+}

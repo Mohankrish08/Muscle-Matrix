@@ -1,0 +1,306 @@
+body {
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+    padding: 10px;
+}
+
+#video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+.header-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+}
+
+.Navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 60px;
+}
+
+.Navigation a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: gray;
+    border-radius: 5px;
+    left: 0;
+    bottom: -6px;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.Navigation a:hover::after {
+    transform: scaleX(1);
+}
+
+.Navigation .login-button {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid white;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: white;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+.Navigation .login-button:hover {
+    /* background: rgb(97, 145, 228); */
+    color: black;
+    background-color: white;
+}
+
+.Navigation a:hover {
+    color: gold;
+    outline: none;
+    
+    
+}
+
+.center {
+    display: flex;
+    font-family: Cambria;
+    justify-content: center;
+    font-size: x-large;
+    color: yellow;
+    font-weight: 800;
+    margin-bottom: 0px;
+  }
+
+  .content {
+    display: flex;
+    font-family: Georgia;
+    justify-content: center;
+    font-size: large;
+    color: white;
+    margin-top: 10px;
+  }
+
+  /* Contact form */
+
+.container {
+    background-image: url('images/contact.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh; /* Set a height to make sure the background covers the entire container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+#form {
+    width: 400px;
+    justify-content: right;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding:  10px;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+    font-size: 40px;
+}
+.username {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    padding: 10px;
+
+}
+
+.username input {
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid rgb(127, 233, 40);
+}
+
+.username input:focus {
+    outline: 0;
+}
+
+.username .error {
+    color: red;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    padding: 10px;
+
+}
+
+.email input {
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid rgb(127, 233, 40);
+}
+
+.email input:focus {
+    outline: 0;
+}
+
+.email .error {
+    color: red;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.password {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    padding: 10px;
+
+}
+
+.password input {
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid rgb(127, 233, 40);
+}
+
+.password input:focus {
+    outline: 0;
+}
+
+.password .error {
+    color: red;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+
+.submit-button {
+    text-align: center; /* Center the button */
+    margin-top: 20px; /* Add some top margin */
+}
+
+.submit-button button {
+    width: 200px; 
+    padding: 10px 20px; 
+    background-color: black;
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 1em; 
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.submit-button button:hover {
+    background-color: green; /* Darker color on hover */
+}
+
+
+
+/* Trainer page */
+
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+  
+  /* Style for the trainer container */
+  .container-1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 5fr));
+    gap: 10px;
+    background-color: black;
+
+  }
+
+  /* Styles for each trainer card */
+  .trainer {
+    /* background-image: url('https://images.pexels.com/photos/6455772/pexels-photo-6455772.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: auto;
+    background-attachment: auto; */
+    background-color: teal;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 0px;
+    color: black;
+    font-family: Cambria;
+    font-weight: 500px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  /* Style the trainer images */
+ .trainer img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    /* padding: 00px; */ /* Remove this line or correct to padding: 0; */
+    cursor: pointer;
+}
+  /* Style the trainer headings */
+  .trainer h2 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+  
+  /* Style the trainer descriptions */
+  .trainer p {
+    font-size: 1rem;
+    margin-bottom: 0;
+    padding: 10px;
+  }
+
+  .header-trainer .header-content-1 {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    color: black;
+
+    
+}
+
+.header-content-1 a::after {
+    
+    background:white;
+}
+  
+
