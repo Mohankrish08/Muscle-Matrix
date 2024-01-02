@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout</title>
+    <link rel="stylesheet" href="css/workout.css">
+    <link rel="icon" href="images/Workout.png" sizes="40x40" type="image/png">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</head>
+<body>
+    <header class="header-workout">
+        <!-- <img src="https://images.pexels.com/photos/6455772/pexels-photo-6455772.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="sam" width="100%"> -->
+        <!-- <div class="header-content-1"> -->
+        <a href="index.html">
+            <img src="images/logo black.png" alt="logo" width="200">
+        </a>
+        <nav class="Navigation">
+            <a href="index.html">Home</a>
+            <a href="#">Workout</a>
+            <a href="trainer.html">Trainer</a>
+            <a href="yoga.html">Yoga</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Your existing HTML content -->
+
+    <div class="container">
+    <form action="" id="exerciseForm">
+        <div class="muscleInput">
+        <label for="muscleInput">Enter the Muscle:</label>
+        <input type="text" id="muscleInput" name="muscleInput">
+        </div>
+        <div class="submit-button">
+        <button type="submit">Get Exercise Details</button>
+        </div>
+    </form>
+    </div>
+
+<div id="exerciseDetailsBox" class="details-box"></div>
+
+<script src="script/workout.js" type="module"></script>
+
+</body>
+</html>
