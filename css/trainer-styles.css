@@ -18,15 +18,18 @@ body {
   }
 
 .trainer {
-    background-color: teal;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
     height: 100%;
-    display: flex;
+    display: grid;
     flex-direction: column;
+    gap: 5px; 
+    border: 3px solid black; /* Black border */
     border-radius: 5px;
-    padding: 0px;
-    color: black;
+    padding: 0;
+    color: white;
     font-family: Cambria;
-    font-weight: 500px;
+    font-weight: 500;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -45,6 +48,7 @@ body {
     font-size: 1.5rem;
     margin-bottom: 30px;
     justify-content: center;
+    color: gold;
   }
   
   /* Style the trainer descriptions */
@@ -86,7 +90,7 @@ body {
     position: absolute;
     width: 100%;
     height: 3px;
-    background: black;
+    background: gray;
     border-radius: 5px;
     left: 0;
     bottom: -6px;

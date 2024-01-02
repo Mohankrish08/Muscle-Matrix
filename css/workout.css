@@ -1,0 +1,175 @@
+body {
+    margin: 0;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    background-image: url('https://images.pexels.com/photos/2261482/pexels-photo-2261482.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-attachment: fixed;
+    box-sizing: border-box;
+}
+
+
+.header-workout {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+}
+
+.Navigation a {
+    position: relative;
+    font-size: x-large;
+    color: white;
+    font-family: cambria;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 50px;
+}
+
+.Navigation a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: gray;
+    border-radius: 5px;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transition: transform .4s;
+}
+
+.Navigation a:hover {
+    color: gold;
+    outline: none;
+        
+}
+
+.Navigation a:hover::after {
+    transform: scaleX(1);
+}  
+
+.container {
+    align-items: center;
+    display: flex;
+}
+
+#exerciseForm {
+    width: 600px;
+    height: 200px;
+    margin: 0 auto; /* Centers the element horizontally */
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px; 
+    margin-top: 10px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column  ;
+    align-items: center;
+}
+
+.muscleInput {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    padding: 5px;
+    font-family: Cambria;
+    font-size: x-large;
+}
+
+.muscleInput input {
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 5px;
+    border: 1px solid rgb(47, 52, 43);
+    width: 360px;
+    font-family: Cambria;
+    height: 30px;
+}
+
+.submit-button {
+    text-align: center;
+    margin-top: 20px;
+    padding: 5px;
+}
+
+.submit-button button {
+    width: 200px; 
+    padding: 10px 20px; 
+    background-color: black;
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 1em; 
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.submit-button button:hover {
+    background-color: gray; /* Darker color on hover */
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 10fr));
+    gap: 10px;
+    background-color: transparent;
+  }
+  
+  .details-box {
+    position: relative;
+    display: grid;
+    background-color: rgba(155, 155, 155, 0.4);
+    backdrop-filter: blur(5px);
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding-left: 10px;
+  }
+  
+  .details-box h2 {
+    font-size: 1.5em;
+    margin-bottom: 8px;
+    font-family: Cambria;
+    color: gold;
+    text-align: center;
+  }
+
+  .details-box h5 {
+    font-size: 1.4em;
+    margin-bottom: 5px;
+    margin-top: 2px;
+    font-family: Cambria;
+    color: rgb(255, 111, 0);
+  }
+
+  .details-box h6 {
+    font-size: 1.3em;
+    margin-bottom: 5px;
+    margin-top: 2px;
+    font-family: Cambria;
+    color: rgb(244, 232, 105);
+  }
+  
+  .details-box p {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    font-family: Cambria;
+    color: white;
+  }
+  
+  
+  
+  
+  
+
+ 
